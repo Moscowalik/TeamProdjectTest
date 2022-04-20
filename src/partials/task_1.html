@@ -1,0 +1,59 @@
+<header class="header">
+    <!--Навигация-->
+    <nav class="header-nav">
+      <!--Логотип-->
+      <img class="header-img" src="../src/images/logo.png" alt="logo">
+      <button class="form__btn homeBtn" type="button">Home</button>
+      <form class="search-form" id="search-form">
+        <input class="form__input" type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
+        <button class="form__btn" type="submit">Search</button>
+      </form>
+      <button class="form__btn watchedbtn" type="button">Watched</button>
+      <button class="form__btn hellbtn" type="button">Hell</button>
+    </nav>
+</header>
+
+<main>
+  <div>
+    <form id= 'userform'action="submit">
+  <input type="email" name="email">
+  <input type="password" name="password">
+  <button type="submit">Submit</button>
+  <div id="userDetails"></div>
+  </form>
+   
+  </div>
+  <ul class="gallery">
+    <!-- Карточки изображений -->
+  </ul>
+  <div class="pagination">
+    <button type="button" class="load-prev displayNone"> < Previos</button>
+    <span class="page"> 1 </span>
+    <button type="button" class="load-more displayNone">Next > </button>
+  </div>
+  
+
+</main>
+
+<!----------------------- Модальное окно--------------------- -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button data-modal-close type="button" class="modal__button">
+      <svg class="modal__icon-btn">
+        <use href="./images/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="movieModal">
+
+    </div>
+    <div class="movieCardBtn">
+      <button type="button" class="movieWatchedBtn">ADD TO WATCHED</button>
+      <button type="button" class="movieHellBtn">ADD TO HELL</button>
+    </div>
+
+  </div>
+</div>
+
+
+
+
