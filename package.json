@@ -6,7 +6,7 @@
   "homepage": "https:///moscowalik.github.io/TeamProdjectTest",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /projectJS_test/"
+    "build": "parcel build src/*.html --public-url /TeamProdjectTest/"
   },
   "repository": {
     "type": "git",
